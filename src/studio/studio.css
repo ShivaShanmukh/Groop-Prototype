@@ -614,3 +614,134 @@
     display: none;
   }
 }
+
+/* Embedded full games (no blueprint yet): chat/controls | game */
+.studio-embedded {
+  grid-template-columns: 300px minmax(0, 1fr);
+  grid-template-rows: var(--top-h) minmax(0, 1fr);
+  grid-template-areas:
+    "top top"
+    "chat stage";
+}
+.embed-stage {
+  padding: 12px;
+  overflow: hidden;
+}
+.embed-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: #07090b;
+}
+.embed-controls {
+  padding: 12px 14px 16px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+}
+.panel-head-label {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.embed-controls ul {
+  list-style: none;
+  margin: 8px 0;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+  color: var(--text-dim);
+}
+.embed-controls kbd {
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 1px 6px;
+  border: 1px solid var(--line-strong);
+  border-radius: 4px;
+  color: var(--text);
+}
+.embed-note {
+  margin: 8px 0;
+  font-size: 12px;
+  color: var(--text-faint);
+}
+@media (max-width: 1000px) {
+  .studio-embedded .panel-stage {
+    height: 62vh;
+  }
+}
+
+/* Play / Blueprint tabs and the Blueprint inspector */
+.stage-tabs { display: flex; flex-direction: column; height: 100%; gap: 8px; min-height: 0; }
+.stage-tabs .embed-frame { flex: 1; min-height: 0; }
+.stage-tabs .embed-frame[hidden] { display: none; }
+.tabs { display: flex; gap: 6px; }
+.tabs button { padding: 6px 14px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg-raised); cursor: pointer; font-size: 13px; color: var(--text-dim); }
+.tabs button.on { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+.bpi { flex: 1; min-height: 0; display: grid; grid-template-columns: 250px minmax(0, 1fr); border: 1px solid var(--line-strong); border-radius: var(--radius); overflow: hidden; background: var(--bg-raised); }
+.bpi-nav { overflow-y: auto; border-right: 1px solid var(--line); padding: 8px; font-family: var(--mono); font-size: 12px; }
+.bpi-nav details { margin: 4px 0; }
+.bpi-nav summary { cursor: pointer; padding: 4px 6px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; font-size: 11px; }
+.bpi-nav summary span { color: var(--text-faint); }
+.bpi-link { display: block; width: 100%; text-align: left; padding: 3px 8px 3px 14px; border: 0; background: none; color: var(--text-dim); cursor: pointer; border-radius: 4px; font: inherit; }
+.bpi-link:hover { color: var(--text); }
+.bpi-link.on { color: var(--text); background: var(--accent-soft); }
+.bpi-top { padding-left: 6px; margin-top: 2px; }
+.bpi-filter { width: 100%; margin: 6px 0; padding: 5px 8px; background: var(--bg-sunken); border: 1px solid var(--line); border-radius: 6px; color: var(--text); font: inherit; }
+.bpi-main { overflow-y: auto; padding: 16px 20px 32px; font-size: 13.5px; }
+.bpi-main h2 { font-family: var(--display); margin: 0 0 8px; font-size: 20px; }
+.bpi-main h2 code { font-size: 13px; color: var(--text-faint); margin-left: 6px; }
+.bpi-main h3 { margin: 18px 0 6px; font-size: 14px; font-family: var(--display); }
+.bpi-main h3 small, .bpi-main h2 small { color: var(--text-faint); font-weight: 400; }
+.bpi-kicker { margin: 0; font-family: var(--mono); font-size: 11px; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; }
+.bpi-note { color: var(--text-dim); }
+.bpi-badge { display: inline-block; padding: 4px 10px; border-radius: 999px; font-family: var(--mono); font-size: 12px; }
+.bpi-badge.ok { color: var(--add); border: 1px solid rgba(74, 222, 128, 0.4); }
+.bpi-badge.bad { color: var(--del); border: 1px solid rgba(255, 107, 107, 0.5); }
+.bpi-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 14px 0; }
+.bpi-stats div { padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; color: var(--text-dim); font-size: 12px; }
+.bpi-stats b { display: block; font-size: 22px; color: var(--text); font-family: var(--display); }
+.bpi-stats small { display: block; color: var(--text-faint); font-size: 11px; }
+.bpi-table { width: 100%; border-collapse: collapse; margin: 6px 0 10px; font-size: 12.5px; }
+.bpi-table caption { text-align: left; font-family: var(--mono); font-size: 11px; color: var(--accent); padding: 4px 0; }
+.bpi-table td, .bpi-table th { border-bottom: 1px solid var(--line); padding: 5px 8px; text-align: left; vertical-align: top; }
+.bpi-table td:first-child { color: var(--text-dim); white-space: nowrap; }
+.bpi-table code, .bpi-main code { font-family: var(--mono); font-size: 11.5px; color: var(--text); overflow-wrap: anywhere; }
+.bpi-trans td:nth-child(3) { min-width: 260px; }
+.bpi-plain { margin: 0; padding-left: 16px; }
+.bpi-src { margin: 4px 0; padding-left: 18px; font-family: var(--mono); font-size: 11px; color: var(--text-faint); }
+.bpi-rel { padding-left: 4px; list-style: none; margin: 0; }
+.bpi-rel li { padding: 3px 0; }
+.bpi-rel span { color: var(--text-dim); }
+.bpi-rel em, .bpi-table em { color: var(--mod); font-style: normal; font-size: 11px; }
+.bpi-via { font-size: 11px; }
+.bpi-inline { border: 0; background: none; padding: 0 2px; color: var(--accent); cursor: pointer; font: inherit; font-family: var(--mono); font-size: 12px; }
+.bpi-fid { font-family: var(--mono); font-size: 10.5px; padding: 1px 6px; border-radius: 4px; }
+.bpi-fid.verified { color: var(--add); border: 1px solid rgba(74, 222, 128, 0.35); }
+.bpi-fid.approximation { color: var(--mod); border: 1px solid rgba(255, 206, 84, 0.4); }
+@media (max-width: 1000px) { .bpi { grid-template-columns: 1fr; } .bpi-nav { max-height: 240px; border-right: 0; border-bottom: 1px solid var(--line); } }
+.bpi-fid.code-read { color: var(--text-dim); border: 1px solid var(--line-strong); }
+/* Phase 2B: Blueprint parameters */
+.bpi-params { display: grid; gap: 10px; margin-top: 12px; }
+.bpi-param { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.bpi-param header { display: grid; grid-template-columns: minmax(0, 1fr) auto auto auto; align-items: center; gap: 12px; }
+.bpi-param header code { color: var(--text-faint); font-size: 11px; margin-left: 4px; }
+.bpi-param-value { font-family: var(--mono); font-size: 13px; white-space: nowrap; }
+.bpi-param-value em { color: var(--mod); font-style: normal; font-size: 11px; }
+.bpi-param .bpi-note { margin: 6px 0; font-size: 12px; }
+.bpi-param-err { margin: 4px 0 6px; }
+.bpi-param dl { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 3px 10px; margin: 0; font-size: 12px; }
+.bpi-param dt { color: var(--text-faint); font-family: var(--mono); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.05em; padding-top: 2px; }
+.bpi-param dd { margin: 0; color: var(--text-dim); }
+.bpi-faint { color: var(--text-faint) !important; font-size: 10.5px !important; }
+.bpi-good { color: var(--add); font-family: var(--mono); font-size: 11px; }
+.bpi-bad { color: var(--del); font-family: var(--mono); font-size: 11px; }
+.bpi-count { color: var(--text-faint); }
+.bpi-try { width: 84px; padding: 4px 6px; background: var(--bg-sunken); border: 1px solid var(--line); border-radius: 6px; color: var(--text); font: inherit; font-family: var(--mono); font-size: 12px; }
+.bpi-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 12px; }
+.bpi-btn { padding: 7px 14px; border-radius: 8px; border: 1px solid var(--accent); background: var(--accent); color: #111; font: inherit; font-weight: 600; cursor: pointer; }
+.bpi-btn.ghost { background: none; color: var(--text); border-color: var(--line-strong); }
+.bpi-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+@media (max-width: 700px) { .bpi-param header { grid-template-columns: 1fr auto; } .bpi-param dl { grid-template-columns: 1fr; } }

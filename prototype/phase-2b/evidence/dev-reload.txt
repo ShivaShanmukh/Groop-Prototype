@@ -1,0 +1,39 @@
+{
+  "before": {
+    "params": {
+      "guardSightRange": 11,
+      "guardChaseSpeed": 4,
+      "sprintNoiseRadius": 9,
+      "alarmDuration": 60,
+      "cameraRange": 13
+    },
+    "source": "Parameters: 5 from research-facility.blueprint.json (validated)"
+  },
+  "edited": {
+    "params": {
+      "guardSightRange": 11,
+      "guardChaseSpeed": 7,
+      "sprintNoiseRadius": 9,
+      "alarmDuration": 60,
+      "cameraRange": 13
+    },
+    "source": "Parameters: 5 from research-facility.blueprint.json (validated)"
+  },
+  "invalid": {
+    "errorShown": true,
+    "started": false,
+    "text": "PARAMETER_OUT_OF_RANGE at parameters[1](guardChaseSpeed): guardChaseSpeed: supplied 999 — expected number, minimum 0.5, maximum 10."
+  },
+  "restored": {
+    "params": {
+      "guardSightRange": 11,
+      "guardChaseSpeed": 4,
+      "sprintNoiseRadius": 9,
+      "alarmDuration": 60,
+      "cameraRange": 13
+    },
+    "source": "Parameters: 5 from research-facility.blueprint.json (validated)"
+  },
+  "fileRestored": true
+}
+PASS  dev server: Blueprint file edit → running game, invalid edit → refused, restore → baseline

@@ -61,6 +61,23 @@ Three.js only loads when Vault Run opens, so the 2D games don't download it.
 
 Asking for a change that's already in the current version also returns "Nothing was changed."
 
+### Fifth game: The Research Facility (embedded)
+
+A larger, hand-built 3D stealth game from `prototype/phase-1/` (see that folder's README).
+
+- **How it's served:** the studio shows it as the fifth card. Its studio page runs the full game in a frame, with the controls alongside.
+- **No change requests yet.** It isn't blueprint-driven, so its studio page says that instead of offering suggestions.
+- **Where the files live:** its built files sit in `public/games/research-facility/`. After changing the game, refresh them with:
+
+```bash
+npm run sync:facility   # builds prototype/phase-1 and copies it into public/games/research-facility
+```
+
+**Its Blueprint tab** is a read-only inspector of `prototype/phase-2a/research-facility.blueprint.json`:
+- **What it is:** a structured description of the running game (entities, rules, state machines, relationships, objectives), **generated from the runtime**.
+- **Authority:** the runtime stays the single source of truth.
+- **Details:** see `prototype/phase-2a/`. After changing the game, run `npm run build` and `npm test` there, which regenerate and check the blueprint.
+
 ### Adding a request
 
 1. Add a `ScriptedRequest` to `requests` in that game's `blueprint.ts`, with its text, reply and ops.

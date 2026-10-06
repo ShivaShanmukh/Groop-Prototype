@@ -1,0 +1,3 @@
+The Research Facility 0.2.0
+Built: 2026-10-06T20:57:26.500Z
+Game code SHA-256: efc774cdef83a04aa48f9567088d3c87f43e1f5e8ca6522368e357e9caf636ac

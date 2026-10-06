@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { findGame, GAMES } from "@/games/meta";
+import { EmbeddedStudio } from "@/studio/EmbeddedStudio";
 import { Studio } from "@/studio/Studio";
 
 export function generateStaticParams(): { game: string }[] {
@@ -39,5 +40,6 @@ export default async function StudioPage({ params, searchParams }: Props) {
 
   const raw = (await searchParams).prompt;
   const typed = (Array.isArray(raw) ? raw[0] : raw)?.trim().slice(0, 300);
+  if (meta.embed) return <EmbeddedStudio meta={{ ...meta, embed: meta.embed }} prompt={typed || meta.prompt} />;
   return <Studio key={`${meta.id}:${typed ?? ""}`} meta={meta} prompt={typed || meta.prompt} />;
 }

@@ -34,7 +34,7 @@ export function HomePrompt() {
       <textarea
         value={text}
         rows={2}
-        placeholder={GAMES[1]?.prompt}
+        placeholder={GAMES.find((g) => g.id === "night-watch")?.prompt}
         onChange={(e) => {
           setText(e.target.value);
           setNote("");

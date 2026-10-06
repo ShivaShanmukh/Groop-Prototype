@@ -42,6 +42,18 @@ export function CardArt({ id }: { id: string }) {
           <rect x="64" y="76" width="34" height="5" rx="2.5" fill="#f2efe9" />
         </>
       )}
+      {id === "research-facility" && (
+        <>
+          <rect x="0" y="0" width="160" height="90" fill="#0f1418" />
+          <path d="M18 80 L52 26 L108 26 L142 80 Z" fill="#1b2328" stroke="#2f3a42" />
+          <rect x="62" y="34" width="36" height="9" rx="1.5" fill="#7a1010" />
+          <rect x="72" y="45" width="16" height="22" fill="#c9a227" />
+          <path d="M120 40 L100 74 L140 74 Z" fill="rgba(232,131,58,0.25)" />
+          <circle cx="120" cy="40" r="3.5" fill="#3dff7a" />
+          <rect x="30" y="58" width="16" height="3" rx="1" fill="#3fa9ff" />
+          <circle cx="58" cy="70" r="4.5" fill="#E8833A" />
+        </>
+      )}
       {id === "vault-run" && (
         <>
           <path d="M20 78 L60 30 L120 30 L148 78 Z" fill="#1d1e22" stroke="#2f3036" />

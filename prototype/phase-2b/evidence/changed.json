@@ -1,0 +1,695 @@
+{
+  "runtimeParams": {
+    "guardSightRange": 6,
+    "guardChaseSpeed": 4,
+    "sprintNoiseRadius": 9,
+    "alarmDuration": 60,
+    "cameraRange": 13
+  },
+  "blueprintParams": {
+    "guardSightRange": 6,
+    "guardChaseSpeed": 4,
+    "sprintNoiseRadius": 9,
+    "alarmDuration": 60,
+    "cameraRange": 13
+  },
+  "summaries": [
+    {
+      "bot": "planned",
+      "runs": 30,
+      "wins": 3,
+      "caught": 27,
+      "timeouts": 0,
+      "avgWinTime": 174.33888888891977,
+      "totalChases": 46,
+      "totalAlarms": 0,
+      "avgFirstChase": 89.71904761904379,
+      "runsWithoutChase": 2,
+      "avgSurvival": 102.0794444444439
+    },
+    {
+      "bot": "naive",
+      "runs": 30,
+      "wins": 0,
+      "caught": 30,
+      "timeouts": 0,
+      "avgWinTime": null,
+      "totalChases": 30,
+      "totalAlarms": 20,
+      "avgFirstChase": 10.466666666666786,
+      "runsWithoutChase": 0,
+      "avgSurvival": 12.350000000000188
+    },
+    {
+      "bot": "careful",
+      "runs": 30,
+      "wins": 0,
+      "caught": 30,
+      "timeouts": 0,
+      "avgWinTime": null,
+      "totalChases": 35,
+      "totalAlarms": 20,
+      "avgFirstChase": 17.433888888888678,
+      "runsWithoutChase": 0,
+      "avgSurvival": 19.289999999999814
+    }
+  ],
+  "runs": {
+    "planned": [
+      {
+        "outcome": "caught",
+        "time": 44.8666666666654,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 41.699999999998916
+      },
+      {
+        "outcome": "caught",
+        "time": 107.51666666666185,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 104.19999999999537
+      },
+      {
+        "outcome": "caught",
+        "time": 107.49999999999518,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 104.19999999999537
+      },
+      {
+        "outcome": "caught",
+        "time": 76.94999999999692,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 45.21666666666538
+      },
+      {
+        "outcome": "caught",
+        "time": 127.86666666666069,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 119.26666666666118
+      },
+      {
+        "outcome": "caught",
+        "time": 128.09999999999408,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 119.29999999999451
+      },
+      {
+        "outcome": "caught",
+        "time": 45.56666666666536,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 43.183333333332165
+      },
+      {
+        "outcome": "caught",
+        "time": 111.7666666666616,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 107.21666666666187
+      },
+      {
+        "outcome": "caught",
+        "time": 111.78333333332827,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 107.1999999999952
+      },
+      {
+        "outcome": "caught",
+        "time": 100.18333333332893,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 97.1833333333291
+      },
+      {
+        "outcome": "caught",
+        "time": 111.2333333333283,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 108.06666666666182
+      },
+      {
+        "outcome": "caught",
+        "time": 111.29999999999497,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 108.08333333332848
+      },
+      {
+        "outcome": "caught",
+        "time": 52.249999999998316,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 49.24999999999849
+      },
+      {
+        "outcome": "caught",
+        "time": 117.94999999999459,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 109.6333333333284
+      },
+      {
+        "outcome": "caught",
+        "time": 115.69999999999472,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 109.64999999999506
+      },
+      {
+        "outcome": "caught",
+        "time": 42.43333333333221,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 40.79999999999897
+      },
+      {
+        "outcome": "caught",
+        "time": 110.799999999995,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 106.7166666666619
+      },
+      {
+        "outcome": "won",
+        "time": 180.71666666670262,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 107.13333333332854
+      },
+      {
+        "outcome": "caught",
+        "time": 50.13333333333177,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 47.09999999999861
+      },
+      {
+        "outcome": "caught",
+        "time": 109.6333333333284,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 106.41666666666191
+      },
+      {
+        "outcome": "caught",
+        "time": 109.78333333332839,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 106.63333333332857
+      },
+      {
+        "outcome": "caught",
+        "time": 46.883333333331954,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 44.09999999999878
+      },
+      {
+        "outcome": "caught",
+        "time": 110.61666666666167,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 107.08333333332854
+      },
+      {
+        "outcome": "caught",
+        "time": 110.58333333332834,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 107.01666666666188
+      },
+      {
+        "outcome": "caught",
+        "time": 71.59999999999722,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 69.0833333333307
+      },
+      {
+        "outcome": "won",
+        "time": 171.15000000002834,
+        "alarms": 0,
+        "chases": 0,
+        "firstChase": null
+      },
+      {
+        "outcome": "won",
+        "time": 171.15000000002834,
+        "alarms": 0,
+        "chases": 0,
+        "firstChase": null
+      },
+      {
+        "outcome": "caught",
+        "time": 85.81666666666308,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 82.74999999999659
+      },
+      {
+        "outcome": "caught",
+        "time": 112.06666666666159,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 108.58333333332845
+      },
+      {
+        "outcome": "caught",
+        "time": 108.48333333332846,
+        "alarms": 0,
+        "chases": 2,
+        "firstChase": 105.36666666666197
+      }
+    ],
+    "naive": [
+      {
+        "outcome": "caught",
+        "time": 11.250000000000139,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 10.166666666666751,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 9.566666666666721
+      },
+      {
+        "outcome": "caught",
+        "time": 15.63333333333369,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 15.03333333333366
+      },
+      {
+        "outcome": "caught",
+        "time": 11.250000000000139,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 10.166666666666751,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 9.566666666666721
+      },
+      {
+        "outcome": "caught",
+        "time": 15.63333333333369,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 15.03333333333366
+      },
+      {
+        "outcome": "caught",
+        "time": 11.250000000000139,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 10.166666666666751,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 9.566666666666721
+      },
+      {
+        "outcome": "caught",
+        "time": 15.63333333333369,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 15.03333333333366
+      },
+      {
+        "outcome": "caught",
+        "time": 11.250000000000139,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 10.166666666666751,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 9.566666666666721
+      },
+      {
+        "outcome": "caught",
+        "time": 15.63333333333369,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 15.03333333333366
+      },
+      {
+        "outcome": "caught",
+        "time": 11.250000000000139,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 10.166666666666751,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 9.566666666666721
+      },
+      {
+        "outcome": "caught",
+        "time": 15.63333333333369,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 15.03333333333366
+      },
+      {
+        "outcome": "caught",
+        "time": 11.250000000000139,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 10.166666666666751,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 9.566666666666721
+      },
+      {
+        "outcome": "caught",
+        "time": 15.63333333333369,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 15.03333333333366
+      },
+      {
+        "outcome": "caught",
+        "time": 11.250000000000139,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 10.166666666666751,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 9.566666666666721
+      },
+      {
+        "outcome": "caught",
+        "time": 15.63333333333369,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 15.03333333333366
+      },
+      {
+        "outcome": "caught",
+        "time": 11.250000000000139,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 10.166666666666751,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 9.566666666666721
+      },
+      {
+        "outcome": "caught",
+        "time": 15.63333333333369,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 15.03333333333366
+      },
+      {
+        "outcome": "caught",
+        "time": 11.250000000000139,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 10.166666666666751,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 9.566666666666721
+      },
+      {
+        "outcome": "caught",
+        "time": 15.63333333333369,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 15.03333333333366
+      },
+      {
+        "outcome": "caught",
+        "time": 11.250000000000139,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 10.166666666666751,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 9.566666666666721
+      },
+      {
+        "outcome": "caught",
+        "time": 15.63333333333369,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 15.03333333333366
+      }
+    ],
+    "careful": [
+      {
+        "outcome": "caught",
+        "time": 9.083333333333364,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 12.350000000000193,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 10.466666666666766
+      },
+      {
+        "outcome": "caught",
+        "time": 30.349999999999557,
+        "alarms": 1,
+        "chases": 2,
+        "firstChase": 29.48333333333294
+      },
+      {
+        "outcome": "caught",
+        "time": 9.083333333333364,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 12.350000000000193,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 10.466666666666766
+      },
+      {
+        "outcome": "caught",
+        "time": 29.83333333333292,
+        "alarms": 1,
+        "chases": 2,
+        "firstChase": 28.649999999999654
+      },
+      {
+        "outcome": "caught",
+        "time": 9.083333333333364,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 12.350000000000193,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 10.466666666666766
+      },
+      {
+        "outcome": "caught",
+        "time": 30.38333333333289,
+        "alarms": 1,
+        "chases": 2,
+        "firstChase": 29.04999999999963
+      },
+      {
+        "outcome": "caught",
+        "time": 9.083333333333364,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 12.350000000000193,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 10.466666666666766
+      },
+      {
+        "outcome": "caught",
+        "time": 30.949999999999523,
+        "alarms": 1,
+        "chases": 2,
+        "firstChase": 30.349999999999557
+      },
+      {
+        "outcome": "caught",
+        "time": 9.083333333333364,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 12.350000000000193,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 10.466666666666766
+      },
+      {
+        "outcome": "caught",
+        "time": 31.633333333332818,
+        "alarms": 1,
+        "chases": 2,
+        "firstChase": 31.033333333332852
+      },
+      {
+        "outcome": "caught",
+        "time": 9.083333333333364,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 12.350000000000193,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 10.466666666666766
+      },
+      {
+        "outcome": "caught",
+        "time": 33.833333333332696,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 31.516666666666158
+      },
+      {
+        "outcome": "caught",
+        "time": 9.083333333333364,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 12.350000000000193,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 10.466666666666766
+      },
+      {
+        "outcome": "caught",
+        "time": 34.066666666666016,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 32.399999999999444
+      },
+      {
+        "outcome": "caught",
+        "time": 9.083333333333364,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 12.350000000000193,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 10.466666666666766
+      },
+      {
+        "outcome": "caught",
+        "time": 33.799999999999365,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 33.1999999999994
+      },
+      {
+        "outcome": "caught",
+        "time": 9.083333333333364,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 12.350000000000193,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 10.466666666666766
+      },
+      {
+        "outcome": "caught",
+        "time": 33.566666666666045,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 31.033333333332852
+      },
+      {
+        "outcome": "caught",
+        "time": 9.083333333333364,
+        "alarms": 0,
+        "chases": 1,
+        "firstChase": 6.799999999999981
+      },
+      {
+        "outcome": "caught",
+        "time": 12.350000000000193,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 10.466666666666766
+      },
+      {
+        "outcome": "caught",
+        "time": 75.94999999999698,
+        "alarms": 1,
+        "chases": 1,
+        "firstChase": 73.63333333333044
+      }
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Research Facility · Groop prototype</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b0b0c'/%3E%3Crect x='9' y='9' width='14' height='14' rx='3' fill='%23E8833A'/%3E%3C/svg%3E" />
+    <script type="module" crossorigin src="./assets/index-DHcxCppE.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-agkuGoDQ.css">
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+
+    <div id="hud" hidden>
+      <div class="hud-objective">
+        <span class="hud-label">Objective</span>
+        <p id="objective"></p>
+        <span id="area" class="hud-area"></span>
+      </div>
+      <canvas id="minimap" width="240" height="176"></canvas>
+      <div id="toasts"></div>
+      <div id="crosshair"></div>
+      <div id="prompt" hidden></div>
+      <div class="hud-status">
+        <div class="chips">
+          <span id="posture" class="chip"></span>
+          <span id="power" class="chip"></span>
+          <span id="cams" class="chip"></span>
+          <span id="alarm" class="chip"></span>
+        </div>
+        <div class="meter">
+          <span id="meter-label">Hidden</span>
+          <div class="meter-bar"><div id="meter-fill"></div></div>
+        </div>
+      </div>
+      <div class="hud-inventory">
+        <div id="slots"></div>
+        <span class="hud-hint">Tab inventory · M mute · Esc pause</span>
+      </div>
+      <div id="vignette"></div>
+    </div>
+
+    <section id="title" class="screen">
+      <div class="panel">
+        <p class="eyebrow">Groop prototype · Phase 1</p>
+        <h1>The Research Facility</h1>
+        <p class="brief">
+          Helix Research went dark three nights ago. Get in, find a keycard, take the only copy of the
+          Project HELIX research from the restricted archive, and get out without being caught.
+        </p>
+        <div class="controls">
+          <span><kbd>W A S D</kbd> move</span><span><kbd>Mouse</kbd> look</span>
+          <span><kbd>Shift</kbd> sprint (loud)</span><span><kbd>C</kbd> crouch (quiet)</span>
+          <span><kbd>E</kbd> interact</span><span><kbd>Tab</kbd> inventory</span>
+        </div>
+        <button id="start" class="btn">Click to start</button>
+        <p class="small">Keyboard and mouse required. Click the game to capture the mouse; ← → also turn.</p>
+        <p id="bp-source" class="small bp-source"></p>
+      </div>
+    </section>
+
+    <section id="bp-error" class="screen" hidden>
+      <div class="panel">
+        <p class="eyebrow">Blueprint rejected · the game did not start</p>
+        <h2>Invalid game parameters</h2>
+        <ul id="bp-error-list" class="bp-error-list"></ul>
+        <p class="small">Fix the value in research-facility.blueprint.json (or the ?bp.… override in the URL) and reload. Out-of-range values are rejected, never clamped.</p>
+      </div>
+    </section>
+
+    <section id="pause" class="screen" hidden>
+      <div class="panel"><h2>Paused</h2><button id="resume" class="btn">Resume</button><button id="restart-p" class="btn ghost">Restart</button></div>
+    </section>
+
+    <section id="terminal" class="screen" hidden>
+      <div class="panel terminal">
+        <p class="eyebrow">HELIX SECURITY v4.2 · logged in as night_shift</p>
+        <h2>Security terminal</h2>
+        <button id="t-cams" class="btn"></button>
+        <button id="t-alarm" class="btn"></button>
+        <button id="t-close" class="btn ghost">Log out <kbd>Esc</kbd></button>
+      </div>
+    </section>
+
+    <section id="inventory" class="screen" hidden>
+      <div class="panel"><h2>Inventory</h2><ul id="inv-list"></ul><p class="small">Tab to close</p></div>
+    </section>
+
+    <section id="end" class="screen" hidden>
+      <div class="panel">
+        <p id="end-eyebrow" class="eyebrow"></p>
+        <h1 id="end-title"></h1>
+        <p id="end-reason" class="brief"></p>
+        <div id="end-stats" class="stats"></div>
+        <button id="again" class="btn">Play again <kbd>R</kbd></button>
+      </div>
+    </section>
+
+  </body>
+</html>

@@ -1,0 +1,180 @@
+{
+  "parameter": "guardSightRange",
+  "from": 11,
+  "to": 6,
+  "blueprint": "prototype/phase-2a/research-facility.blueprint.json",
+  "fileDiff": [
+    {
+      "before": "\"value\": 11,",
+      "after": "\"value\": 6,"
+    }
+  ],
+  "originalSha256": "93576e0be6aacaf7fe4c376b40ae8517cd2d0667ae6a6861ed918e5fd7f6fd75",
+  "restoredSha256": "93576e0be6aacaf7fe4c376b40ae8517cd2d0667ae6a6861ed918e5fd7f6fd75",
+  "summaries": {
+    "baseline": [
+      {
+        "bot": "planned",
+        "runs": 30,
+        "wins": 3,
+        "caught": 27,
+        "timeouts": 0,
+        "avgWinTime": 174.33888888891977,
+        "totalChases": 46,
+        "totalAlarms": 0,
+        "avgFirstChase": 89.71904761904379,
+        "runsWithoutChase": 2,
+        "avgSurvival": 102.0794444444439
+      },
+      {
+        "bot": "naive",
+        "runs": 30,
+        "wins": 0,
+        "caught": 30,
+        "timeouts": 0,
+        "avgWinTime": null,
+        "totalChases": 30,
+        "totalAlarms": 20,
+        "avgFirstChase": 10.333333333333444,
+        "runsWithoutChase": 0,
+        "avgSurvival": 12.205555555555746
+      },
+      {
+        "bot": "careful",
+        "runs": 30,
+        "wins": 0,
+        "caught": 30,
+        "timeouts": 0,
+        "avgWinTime": null,
+        "totalChases": 30,
+        "totalAlarms": 20,
+        "avgFirstChase": 12.438888888888963,
+        "runsWithoutChase": 0,
+        "avgSurvival": 15.077777777777824
+      }
+    ],
+    "changed": [
+      {
+        "bot": "planned",
+        "runs": 30,
+        "wins": 3,
+        "caught": 27,
+        "timeouts": 0,
+        "avgWinTime": 174.33888888891977,
+        "totalChases": 46,
+        "totalAlarms": 0,
+        "avgFirstChase": 89.71904761904379,
+        "runsWithoutChase": 2,
+        "avgSurvival": 102.0794444444439
+      },
+      {
+        "bot": "naive",
+        "runs": 30,
+        "wins": 0,
+        "caught": 30,
+        "timeouts": 0,
+        "avgWinTime": null,
+        "totalChases": 30,
+        "totalAlarms": 20,
+        "avgFirstChase": 10.466666666666786,
+        "runsWithoutChase": 0,
+        "avgSurvival": 12.350000000000188
+      },
+      {
+        "bot": "careful",
+        "runs": 30,
+        "wins": 0,
+        "caught": 30,
+        "timeouts": 0,
+        "avgWinTime": null,
+        "totalChases": 35,
+        "totalAlarms": 20,
+        "avgFirstChase": 17.433888888888678,
+        "runsWithoutChase": 0,
+        "avgSurvival": 19.289999999999814
+      }
+    ],
+    "restored": [
+      {
+        "bot": "planned",
+        "runs": 30,
+        "wins": 3,
+        "caught": 27,
+        "timeouts": 0,
+        "avgWinTime": 174.33888888891977,
+        "totalChases": 46,
+        "totalAlarms": 0,
+        "avgFirstChase": 89.71904761904379,
+        "runsWithoutChase": 2,
+        "avgSurvival": 102.0794444444439
+      },
+      {
+        "bot": "naive",
+        "runs": 30,
+        "wins": 0,
+        "caught": 30,
+        "timeouts": 0,
+        "avgWinTime": null,
+        "totalChases": 30,
+        "totalAlarms": 20,
+        "avgFirstChase": 10.333333333333444,
+        "runsWithoutChase": 0,
+        "avgSurvival": 12.205555555555746
+      },
+      {
+        "bot": "careful",
+        "runs": 30,
+        "wins": 0,
+        "caught": 30,
+        "timeouts": 0,
+        "avgWinTime": null,
+        "totalChases": 30,
+        "totalAlarms": 20,
+        "avgFirstChase": 12.438888888888963,
+        "runsWithoutChase": 0,
+        "avgSurvival": 15.077777777777824
+      }
+    ]
+  },
+  "paired": [
+    {
+      "bot": "planned",
+      "runsChanged": 0,
+      "outcomeChanged": 0,
+      "firstChaseLater": 0,
+      "firstChaseEarlier": 0,
+      "survivedLonger": 0,
+      "survivedShorter": 0
+    },
+    {
+      "bot": "naive",
+      "runsChanged": 30,
+      "outcomeChanged": 0,
+      "firstChaseLater": 30,
+      "firstChaseEarlier": 0,
+      "survivedLonger": 30,
+      "survivedShorter": 0
+    },
+    {
+      "bot": "careful",
+      "runsChanged": 30,
+      "outcomeChanged": 0,
+      "firstChaseLater": 30,
+      "firstChaseEarlier": 0,
+      "survivedLonger": 30,
+      "survivedShorter": 0
+    }
+  ],
+  "checks": {
+    "fileEditTouchedOneLine": true,
+    "baselineRuntimeReceived11": true,
+    "changedRuntimeReceived6": true,
+    "otherParamsUnchanged": true,
+    "testA_baselineEqualsPhase2AHardcoded": true,
+    "behaviourChanged": true,
+    "fileRestoredByteForByte": true,
+    "restoredRuntimeReceived11": true,
+    "restoredEqualsBaselineEveryRun": true,
+    "restoredEqualsBaselineSummaries": true
+  }
+}

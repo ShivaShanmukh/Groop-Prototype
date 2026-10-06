@@ -7,6 +7,11 @@ export interface GameMeta {
   /** Words in a free-text home prompt that route to this game. */
   keywords: string[];
   ready: boolean;
+  /**
+   * A complete game embedded as static files (no blueprint or change requests yet).
+   * The path is served from public/.
+   */
+  embed?: string;
 }
 
 export const GAMES: GameMeta[] = [
@@ -43,6 +48,15 @@ export const GAMES: GameMeta[] = [
     keywords: ["3d", "vault", "drone"],
     ready: true,
   },
+  {
+    id: "research-facility",
+    name: "The Research Facility",
+    genre: "3D stealth",
+    prompt: "A 3D stealth game: break into an abandoned research facility, find a keycard, steal the research and escape.",
+    keywords: ["research", "facility", "laboratory", "generator", "heist"],
+    ready: true,
+    embed: "/games/research-facility/index.html",
+  },
 ];
 
 export function findGame(id: string): GameMeta | undefined {
@@ -53,7 +67,7 @@ export function findGame(id: string): GameMeta | undefined {
 export function matchPrompt(text: string): GameMeta | undefined {
   const t = text.toLowerCase();
   // Most specific first: "3d" or "vault" beats the generic stealth words.
-  const order = ["vault-run", "sky-hopper", "brick-storm", "night-watch"];
+  const order = ["research-facility", "vault-run", "sky-hopper", "brick-storm", "night-watch"];
   return order
     .map((id) => GAMES.find((g) => g.id === id))
     .find((g): g is GameMeta => !!g && g.keywords.some((k) => t.includes(k)));

@@ -1,0 +1,157 @@
+{
+  "when": "2026-10-06T22:49:52.485Z",
+  "url": "http://localhost:4173/",
+  "results": [
+    {
+      "name": "Game launches",
+      "pass": true,
+      "detail": "title shown, Start → state \"playing\", HUD visible",
+      "how": "real click"
+    },
+    {
+      "name": "Player moves",
+      "pass": true,
+      "detail": "W held → 3.60 m/s (design 3.6), moved 3.8 m from the start",
+      "how": "real keys"
+    },
+    {
+      "name": "Camera works",
+      "pass": true,
+      "detail": "mouse (pointer lock) turned -0.13 rad; ← turned 1.28 rad",
+      "how": "real mouse + keys"
+    },
+    {
+      "name": "Sprint works",
+      "pass": true,
+      "detail": "Shift+W → 6.00 m/s (design 6.0); HUD \"SPRINTING · loud\"",
+      "how": "real keys"
+    },
+    {
+      "name": "Crouch works",
+      "pass": true,
+      "detail": "C → crouching, eye 1.01 m, 1.90 m/s (design 1.9), HUD \"CROUCHED · quiet\"; C again → eye 1.64 m",
+      "how": "real keys"
+    },
+    {
+      "name": "Interaction works",
+      "pass": true,
+      "detail": "prompt \"[E] Take security keycard\" → E → inventory [\"keycard\"]",
+      "how": "real keys"
+    },
+    {
+      "name": "Inventory works",
+      "pass": true,
+      "detail": "HUD slot shows \"Security keycard\"; Tab opens panel listing it; Tab closes (state playing)",
+      "how": "real keys"
+    },
+    {
+      "name": "Keycard works",
+      "pass": true,
+      "detail": "picked up; objective now: \"Retrieve the research drive from the Archive in the restricted wing.\"",
+      "how": "real keys"
+    },
+    {
+      "name": "Door works",
+      "pass": true,
+      "detail": "security door locked=true before; with keycard → unlocked, opened, player at x=44.4 (inside restricted wing, x>42)",
+      "how": "real keys"
+    },
+    {
+      "name": "Objective works",
+      "pass": true,
+      "detail": "E on pedestal → inventory [\"keycard\",\"drive\"]; exit locked=false; objective: \"Escape through the emergency exit at the west end of the corridor.\"",
+      "how": "real keys"
+    },
+    {
+      "name": "Exit works",
+      "pass": true,
+      "detail": "walked into the opened emergency exit → outcome {\"result\":\"won\",\"reason\":\"You escaped with the research.\"}",
+      "how": "real keys"
+    },
+    {
+      "name": "Win state works",
+      "pass": true,
+      "detail": "end screen \"You escaped\" with stats: 0:31Time0Times spotted1Alarms",
+      "how": "real keys"
+    },
+    {
+      "name": "Restart after win",
+      "pass": true,
+      "detail": "R → new run, inventory empty, state playing",
+      "how": "real keys"
+    },
+    {
+      "name": "Frame rate",
+      "pass": true,
+      "detail": "54 frames per second in this browser (headless Chrome, 1280×720)",
+      "how": "measured"
+    },
+    {
+      "name": "Generator works",
+      "pass": true,
+      "detail": "prompt \"[E] Shut down generator\" → E → power off, all 4 cameras off, terminal shows \"[E] Security terminal (no power)\"; guards that heard it: Guard Lin",
+      "how": "real keys"
+    },
+    {
+      "name": "Generator restarts",
+      "pass": true,
+      "detail": "E again → power on, cameras active",
+      "how": "real keys"
+    },
+    {
+      "name": "Camera detection works",
+      "pass": true,
+      "detail": "standing in CAM-02's cone → detect 1.00 → alarm raised in under 4 s",
+      "how": "setup + real time"
+    },
+    {
+      "name": "Alarm works",
+      "pass": true,
+      "detail": "alarm chip \"ALARM · 60s\", 3/3 guards switched to INVESTIGATE (\"alarm raised\"); terminal (E) → key 2 reset alarm → active=false",
+      "how": "real keys"
+    },
+    {
+      "name": "Security terminal affects cameras",
+      "pass": true,
+      "detail": "key 1 → cameras disabled (camerasActive=false)",
+      "how": "real keys"
+    },
+    {
+      "name": "Guard patrol works",
+      "pass": true,
+      "detail": "Guard Reyes walked 5.4 m in 3 s while in PATROL",
+      "how": "real time"
+    },
+    {
+      "name": "Guard detects player",
+      "pass": true,
+      "detail": "transitions: SUSPICIOUS → CHASE",
+      "how": "setup + real time"
+    },
+    {
+      "name": "Guard chases player",
+      "pass": true,
+      "detail": "guard closed from 7.0 m to 6.5 m",
+      "how": "real time"
+    },
+    {
+      "name": "Guard searches",
+      "pass": true,
+      "detail": "after losing sight: CHASE → SEARCH",
+      "how": "setup + real time"
+    },
+    {
+      "name": "Guard returns to patrol",
+      "pass": true,
+      "detail": "SEARCH (lost the intruder) → RETURN (giving up the search) → PATROL (back on patrol)",
+      "how": "real time"
+    },
+    {
+      "name": "Loss state works",
+      "pass": true,
+      "detail": "outcome {\"result\":\"lost\",\"reason\":\"Guard Reyes caught you.\"}; end screen \"Caught\"",
+      "how": "setup + real time"
+    }
+  ],
+  "consoleErrors": []
+}
